@@ -2,6 +2,12 @@
 
 A React component for creating forms that post Emma Signup Form data. It does not require any API keys.
 
+## Installation
+
+With npm:
+
+`npm install --save react-emma-signup-form`
+
 ## Usage
 
 ### Requirements

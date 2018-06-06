@@ -11,10 +11,14 @@
     "email": "agordon@hutsoninc.com",
     "url": "https://github.com/AustinLeeGordon"
   },
+  "repository": {
+    "url": "https://github.com/hutsoninc/react-emma-signup-form.git",
+    "type": "git"
+  },
   "license": "MIT",
   "devDependencies": {
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1"
