@@ -1,0 +1,22 @@
+{
+  "name": "react-emma-signup-form",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Austin Gordon",
+    "email": "agordon@hutsoninc.com",
+    "url": "https://github.com/AustinLeeGordon"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
