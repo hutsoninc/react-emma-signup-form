@@ -15,6 +15,7 @@ node_modules/
 json
 src
 static
+tests
 .babelrc
 
 # Temporary
