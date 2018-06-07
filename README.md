@@ -15,7 +15,7 @@ With npm:
 - Email input name attribute must be "email"
 - Other input name attributes must begin with "member\_field\_" and must end with your contact field
   - Example: A field named "First Name" will change to "first-name" and will have a name attribute of "member\_field\_first-name"
-- Form action url must be: "https://app.e2ma.net/app2/audience/signup/<your-signup-id>/<your-account-id>/?r=signup"
+- Form action url must be: "https://app.e2ma.net/app2/audience/signup/{your-signup-id}/{your-account-id}/?r=signup"
 - Make sure you have an input for each field required by your Emma form
 
 ### Usage Example
@@ -47,3 +47,11 @@ With npm:
     }}
 </EmmaSignupForm>
 ```
+
+## Authors
+
+* **Austin Gordon** - *Development* - [GitHub](https://github.com/AustinLeeGordon)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
