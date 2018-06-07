@@ -28,14 +28,16 @@ With npm:
         9876543
     ]}
 >
-    {({ error, loading, success }) = {
+    {({ error, loading, success }) => {
         return (
             <div>
                 {!success && !loading &&
-                    <input name="email" type="email" placeholder="Email" />
-                    <input name="member_field_first-name" type="text" placeholder="First Name" />
-                    <input name="member_field_last-name" type="text" placeholder="Last Name" />
-                    <button>Submit</button>
+                    <div>
+                        <input name="email" type="email" placeholder="Email" />
+                        <input name="member_field_first-name" type="text" placeholder="First Name" />
+                        <input name="member_field_last-name" type="text" placeholder="Last Name" />
+                        <button>Submit</button>
+                    </div>
                 }
                 {loading && <div>Loading...</div>}
                 {error && <div>Error.</div>}

@@ -1,5 +1,6 @@
 import React from 'react';
 import fetch from 'isomorphic-fetch';
+import noop from './noop';
 
 class EmmaSignupForm extends React.Component {
     constructor(props) {
@@ -25,7 +26,7 @@ class EmmaSignupForm extends React.Component {
             success: false,
         });
 
-        let data = new FromData(this.form);
+        let data = new FormData(this.form);
 
 		this.props.onSubmit(data);
 
@@ -34,7 +35,13 @@ class EmmaSignupForm extends React.Component {
 		try {
 			res = await fetch(this.props.action, {
 				method: `post`,
-				body: data,
+                headers: {
+                    'Accept': 'application/json, application/xml, text/plain, text/html, *.*',
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Access-Control-Allow-Headers': 'Access-Control-Allow-Origin',
+                    'Access-Control-Allow-Origin': '*',
+                },
+                body: data,
 			});
 		}
 		catch(err) {
@@ -98,6 +105,12 @@ class EmmaSignupForm extends React.Component {
             </form>
         )
     }
+}
+
+ZapierForm.defaultProps = {
+	onSubmit: noop,
+	onSuccess: noop,
+	onError: noop,
 }
 
 export default EmmaSignupForm;
