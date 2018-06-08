@@ -17,6 +17,7 @@ src
 static
 tests
 .babelrc
+.postcssrc
 
 # Temporary
 temp

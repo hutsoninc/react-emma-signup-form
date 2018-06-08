@@ -19,9 +19,7 @@ static
 docs/build/
 coverage/
 .eslintcache
-.postcssrc
 webpack.config.js
-.babelrc
 
 # Temporary
 temp

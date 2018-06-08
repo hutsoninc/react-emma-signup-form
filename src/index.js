@@ -12,12 +12,12 @@ class EmmaSignupForm extends React.Component {
             success: false,
         }
 
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
         this.onSuccess = this.onSuccess.bind(this);
         this.onError = this.onError.bind(this);
     }
     
-    async handleSubmit(e) {
+    async onSubmit(e) {
         e.preventDefault();
 
         this.setState({
@@ -36,7 +36,6 @@ class EmmaSignupForm extends React.Component {
 			res = await fetch(this.props.action, {
 				method: `post`,
                 headers: {
-                    'Accept': 'application/json, application/xml, text/plain, text/html, *.*',
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'Access-Control-Allow-Headers': 'Access-Control-Allow-Origin',
                     'Access-Control-Allow-Origin': '*',
@@ -92,7 +91,7 @@ class EmmaSignupForm extends React.Component {
         return (
             <form
                 ref={form => this.form = form}
-                onSubmit={this.handleSubmit}
+                onSubmit={this.onSubmit}
                 {...this.props}
             >
                 <div style={{ display: `none` }}>
@@ -107,7 +106,7 @@ class EmmaSignupForm extends React.Component {
     }
 }
 
-ZapierForm.defaultProps = {
+EmmaSignupForm.defaultProps = {
 	onSubmit: noop,
 	onSuccess: noop,
 	onError: noop,
