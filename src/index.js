@@ -28,6 +28,8 @@ class EmmaSignupForm extends React.Component {
 
         let data = new FormData(this.form);
 
+        data.append('r', 'signup');
+
 		this.props.onSubmit(data);
 
 		let res, body;
