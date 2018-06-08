@@ -1,6 +1,6 @@
 {
   "name": "react-emma-signup-form",
-  "version": "0.0.12",
+  "version": "1.0.0",
   "description": "Create signup forms that post to Emma without using the API.",
   "main": "dist/index.js",
   "scripts": {
