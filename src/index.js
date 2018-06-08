@@ -62,11 +62,11 @@ class EmmaSignupForm extends React.Component {
 			return this.onError(body);
         }
         
-		this.onSuccess();
+		this.onSuccess(res);
     }
 
-    onSuccess() {
-        this.props.onSuccess();
+    onSuccess(body) {
+        this.props.onSuccess(body);
         
 		this.setState({
 			loading: false,
