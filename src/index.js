@@ -28,8 +28,6 @@ class EmmaSignupForm extends React.Component {
 
         let data = new FormData(this.form);
 
-        data.append('r', 'signup');
-
 		this.props.onSubmit(data);
 
 		let res, body;
@@ -94,12 +92,14 @@ class EmmaSignupForm extends React.Component {
             <form
                 ref={form => this.form = form}
                 onSubmit={this.onSubmit}
+                method="post"
                 {...this.props}
             >
                 <div style={{ display: `none` }}>
                     {this.props.groups && this.props.groups.map((group, key) => (
                         <input id={`id_group_${group}`} name={`group_${group}`} type="hidden" value={group} />
                     ))}
+                    <input name="r" type="hidden" value="signup" />
                 </div>
 
                 {this.props.children(this.state)}
