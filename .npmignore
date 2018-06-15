@@ -14,6 +14,8 @@ node_modules/
 .next
 json
 src
+dev
+dist-dev
 static
 tests
 .babelrc
