@@ -18,6 +18,8 @@ With npm:
 - Form action url must be: "https://app.e2ma.net/app2/audience/signup/{your-signup-id}/{your-account-id}/"
 - Make sure you have an input for each field required by your Emma form
 
+For help finding the required input names and action URL, use [emma-signup-form-helper](https://github.com/hutsoninc/emma-signup-form-helper).
+
 ### Usage Example
 
 ```jsx
