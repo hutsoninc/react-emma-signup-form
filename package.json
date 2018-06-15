@@ -4,6 +4,7 @@
   "description": "Create signup forms that post to Emma without using the API.",
   "main": "dist/index.js",
   "scripts": {
+    "start": "parcel dev/index.html -d dist-dev/",
     "build": "babel src --out-dir dist",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +27,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "parcel-bundler": "^1.9.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "styled-jsx": "^2.2.6",
